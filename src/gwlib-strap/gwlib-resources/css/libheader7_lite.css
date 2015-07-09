@@ -88,7 +88,6 @@ input[type=submit], button {
 #libheader-container {
 	width: 100%; 
 	margin-bottom: 1em; 
-	height: 2em; 
 	padding: 0 0 .3em;
     background-color: #005581; 
     border-bottom: 4px solid #b2a38f;
@@ -147,6 +146,18 @@ input[type=submit], button {
 #libfooter a:link {color:#fff; text-decoration:none;}
 #libfooter a:visited {color:#fff;}
 #libfooter a:hover {color:#fff; text-decoration:underline;} 
+
+/* from bootstrap's sr-only class to display labels in spans only readable by screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 
 /* responsive class to drop the gw logo when window is 720px or below (mobile-first)  */
 @media screen and (max-width: 720px) {
